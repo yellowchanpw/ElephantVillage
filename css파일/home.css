@@ -137,10 +137,6 @@
   align-items: center;
 }
 
-/* =========================
-   SIGNATURE IMAGE SLIDER
-   ========================= */
-
 .split-media {
   position: relative;
   overflow: hidden;
@@ -282,10 +278,6 @@
   margin: 0 0 20px;
   color: var(--muted);
 }
-
-/* =========================
-   RESPONSIVE
-   ========================= */
 
 @media (max-width: 1100px) {
   .split-slider-track img {

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // HEADER SCROLL
   const header = document.querySelector(".topbar");
 
   if (header && !header.classList.contains("topbar-solid")) {
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleHeaderScroll);
   }
 
-  // REVEAL
   const revealElements = document.querySelectorAll(".reveal");
 
   if (revealElements.length > 0) {
@@ -31,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     revealElements.forEach((el) => observer.observe(el));
   }
 
-// MOBILE MENU
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.getElementById("siteNav");
 

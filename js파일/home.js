@@ -1,4 +1,3 @@
-// SMOOTH SCROLL
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     const target = document.querySelector(link.getAttribute("href"));
@@ -9,8 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-// SLIDER
-// SMOOTH SCROLL
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     const target = document.querySelector(link.getAttribute("href"));
@@ -21,7 +18,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-// SIGNATURE SLIDER - INFINITE LOOP
 const splitMedia = document.querySelector(".split-media");
 
 if (splitMedia) {
