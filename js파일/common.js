@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
           obs.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.05});
+    }, { threshold: 0.01});
 
     revealElements.forEach((el) => observer.observe(el));
   }

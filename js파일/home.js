@@ -8,16 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", (e) => {
-    const target = document.querySelector(link.getAttribute("href"));
-    if (!target) return;
-
-    e.preventDefault();
-    target.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
 const splitMedia = document.querySelector(".split-media");
 
 if (splitMedia) {
@@ -37,6 +27,11 @@ if (splitMedia) {
 
     let index = 1;
     let isMoving = false;
+    let autoSlide = setInterval(() => {
+  if (isMoving) return;
+  index += 1;
+  moveTo(true);
+}, 3000);
 
     const moveTo = (withTransition = true) => {
       track.classList.toggle("no-transition", !withTransition);
