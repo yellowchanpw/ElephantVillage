@@ -27,11 +27,12 @@ if (splitMedia) {
 
     let index = 1;
     let isMoving = false;
-    let autoSlide = setInterval(() => {
-  if (isMoving) return;
-  index += 1;
-  moveTo(true);
-}, 3000);
+
+    setInterval(() => {
+      if (isMoving) return;
+      index += 1;
+      moveTo(true);
+    }, 3000);
 
     const moveTo = (withTransition = true) => {
       track.classList.toggle("no-transition", !withTransition);

@@ -52,7 +52,6 @@
 }
 
 .hero-actions,
-.location-actions,
 .visit-actions {
   display: flex;
   gap: 14px;
@@ -310,6 +309,7 @@
     height: 200px;
   }
 }
+
 .review-score-box {
   display: grid;
   grid-template-columns: 160px 1fr;
@@ -426,10 +426,6 @@
     grid-template-columns: 30px 1fr 36px;
     gap: 10px;
   }
-}
-.review-more {
-  margin-top: 28px;
-  text-align: center;
 }
 
 .btn-review {

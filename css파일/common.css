@@ -73,9 +73,7 @@ button, input { font: inherit; }
 .page-title,
 .hero h1,
 .split-copy h2,
-.visit-copy h2,
-.login-card h1,
-.featured-info h3 {
+.visit-copy h2 {
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -92,13 +90,11 @@ button, input { font: inherit; }
 }
 
 .section-head p,
-.display-copy,
-.page-desc {
+.display-copy {
   color: var(--muted);
 }
 
-.display-copy,
-.page-desc {
+.display-copy {
   margin: 22px auto 0;
   max-width: 760px;
   font-size: 1.05rem;
@@ -209,8 +205,6 @@ button, input { font: inherit; }
 
 .btn-outline:hover { border-color: rgba(255,255,255,0.42); }
 
-.w-full { width: 100%; }
-
 .footer {
   padding: 38px 0 56px;
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -238,62 +232,6 @@ button, input { font: inherit; }
   padding-top: 160px;
   padding-bottom: 72px;
   text-align: center;
-}
-
-.login-page {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 32px;
-  background:
-    linear-gradient(rgba(10, 9, 8, 0.4), rgba(10, 9, 8, 0.58)),
-    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
-}
-
-.login-card {
-  width: min(100%, 480px);
-  padding: 38px;
-  border-radius: 30px;
-  background: rgba(15, 14, 13, 0.82);
-  border: 1px solid rgba(255,255,255,0.12);
-  backdrop-filter: blur(16px);
-  box-shadow: var(--shadow);
-}
-
-.login-card h1 {
-  margin: 0 0 8px;
-  font-size: 3.2rem;
-  line-height: 1;
-  font-weight: 600;
-}
-
-.login-card p {
-  margin: 0 0 24px;
-  color: rgba(255,255,255,0.72);
-}
-
-.form-group { margin-bottom: 14px; }
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 700;
-}
-
-.form-group input {
-  width: 100%;
-  min-height: 52px;
-  padding: 0 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
-}
-
-.form-actions {
-  display: grid;
-  gap: 12px;
-  margin-top: 20px;
 }
 
 .reveal {
