@@ -264,11 +264,15 @@
     align-items: end;
     min-height: calc(100vh - 74px);
     min-height: calc(100dvh - 74px);
-    padding-bottom: 70px;
+    padding-bottom: 24px;
   }
 
   .hero h1 {
     font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .hero-actions {
+    margin-top: 64px;
   }
 
   .section-head h2,
